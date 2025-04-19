@@ -27,8 +27,8 @@ This is a Spring Boot application that demonstrates a simple banking system with
 - [`AccountNotFoundException`](src/main/java/com/example/spring_data_jdbc/exception/AccountNotFoundException.java): A custom exception thrown when an account is not found in the database.
 
 #### 6. **Database**
-- `schema.sql`: Defines the `account` table structure.
-- `data.sql`: Populates the database with initial data.
+- [`schema.sql`](src/main/resources/schema.sql): Defines the `account` table structure.
+- [`data.sql`](src/main/resources/data.sql): Populates the database with initial data.
 
 #### 7. **Application**
 - [`SpringDataJdbcApplication`](src/main/java/com/example/spring_data_jdbc/SpringDataJdbcApplication.java): The main entry point of the Spring Boot application.
@@ -50,7 +50,7 @@ This is a Spring Boot application that demonstrates a simple banking system with
   - `GET /accounts`
   - Response: A list of all accounts with their details.
 
-- ** Get Account By Name**
+- **Get Account By Name**
   - `GET /accounts?name=Jane+Down`
   - Response: Jane Down's account
 
